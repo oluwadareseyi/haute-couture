@@ -48,7 +48,6 @@
 
             @include media("<=850px") {
                 flex-direction: column;
-                // text-align: center;
                 padding: 40px 0;
                 padding-top: 100px;
                 gap: 50px;
@@ -273,6 +272,41 @@
 
         .button {
             @include button;
+        }
+    }
+
+    footer {
+        @include paddingSet;
+        padding-top: 90px;
+        font-size: 45px;
+        height: 520px;
+
+        @include media("<=850px") {
+            font-size: 4vmin;
+        }
+
+        @include media("<=600px") {
+            height: 450px;
+        }
+
+        .inner {
+            background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600804359/Haute/Rectangle_29_g6hsml.jpg");
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            border-radius: 8px;
+        }
+
+        .title {
+            color: transparent;
+            -webkit-text-stroke: 1px $white;
         }
     }
 }

@@ -100,6 +100,15 @@ const Home = () => {
         </div>
         <div className="button">View all</div>
       </section>
+
+      <footer>
+        <div className="inner">
+          <div className="title">Fashion Redefined</div>
+          <div className="sub">
+            ROCK YOUR STYLE, <br /> BEING BORING ISN’T <br /> ALLOWED HERE
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
