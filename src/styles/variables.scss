@@ -1,1 +1,19 @@
 $white: #ffffff;
+
+@mixin bgImage {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @include media("<=850px") {
+        background-position: 50% 30%;
+    }
+}
+
+@mixin button {
+    font-size: 2.5vmin;
+    padding: 15px 35px;
+    border: 1px solid $white;
+    display: inline;
+
+}

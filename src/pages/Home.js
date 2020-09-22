@@ -1,6 +1,44 @@
 import React from "react";
 import { ReactComponent as Cross } from "../assets/images/cross-icon.svg";
 
+const mensClothes = [
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799241/Haute/Rectangle_21_siojtz.png",
+    name: "dagbana",
+  },
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799251/Haute/Rectangle_22_ovxyiw.png",
+    name: "ocean eyes",
+  },
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799233/Haute/Rectangle_23_pizpma.png",
+    name: "ocean eyes",
+  },
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799225/Haute/Rectangle_24_cez3jo.png",
+    name: "lost boys",
+  },
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799250/Haute/Rectangle_25_fqkfh7.png",
+    name: "lost boys",
+  },
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799258/Haute/Rectangle_26_pii1ej.png",
+    name: "lost boys",
+  },
+  {
+    url:
+      "https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600799238/Haute/Rectangle_27_xmrlai.png",
+    name: "lost boys",
+  },
+];
+
 const Home = () => {
   return (
     <div className="landing">
@@ -43,6 +81,24 @@ const Home = () => {
           <div className="item center-bottom">Ocean Eyes</div>
           <div className="item right">Lucid Dreams</div>
         </div>
+        <div className="button">View all</div>
+      </section>
+
+      <section className="mens-wear">
+        <div className="title">Featured</div>
+        <div className="sub">Men Summer Collection</div>
+        <div className="image-con">
+          {mensClothes.map(({ url, name }, i) => (
+            <div
+              key={i}
+              className="image"
+              style={{ backgroundImage: `url(${url})` }}
+            >
+              {name}
+            </div>
+          ))}
+        </div>
+        <div className="button">View all</div>
       </section>
     </div>
   );

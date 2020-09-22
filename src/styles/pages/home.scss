@@ -1,12 +1,17 @@
 .landing {
     color: $white;
-    padding: 40px 70px;
 
-    @include media("<=600px") {
-        padding: 40px;
+    @mixin paddingSet {
+        padding: 40px 70px;
+
+        @include media("<=600px") {
+            padding: 40px;
+        }
     }
 
     .hero {
+        @include paddingSet;
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -149,14 +154,20 @@
     }
 
     .featured {
-        padding: 50px 0;
+        @include paddingSet;
+        padding-top: 50px;
         @include titleSub;
+
+        @include media("<=850px") {
+            text-align: center;
+        }
 
         &-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 380px);
             grid-gap: 25px;
+            margin-bottom: 85px;
 
             @include media("<=1050px") {
                 grid-template-rows: repeat(2, 330px);
@@ -167,15 +178,7 @@
                 grid-template-rows: repeat(4, 400px);
             }
 
-            @mixin bgImage {
-                background-size: cover;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
 
-                @include media("<=850px") {
-                    background-position: 50% 30%;
-                }
-            }
 
             .item {
                 background: #eee;
@@ -220,6 +223,56 @@
                 background: url("https://res.cloudinary.com/dmwfd0zhh/image/upload/v1600793724/Haute/Rectangle_19_fvrydb.png");
                 @include bgImage;
             }
+        }
+
+        .button {
+            @include button;
+        }
+    }
+
+    .mens-wear {
+        @include paddingSet;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 0;
+        @include titleSub;
+
+        @include media("<=850px") {
+            text-align: center;
+        }
+
+        .image-con {
+            display: flex;
+            gap: 20px;
+            overflow: auto;
+            margin-bottom: 85px;
+
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .image {
+                flex: 0 0 auto;
+                width: 320px;
+                height: 420px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 0;
+                font-size: 4vmin;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 20px;
+
+                &:last-of-type {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .button {
+            @include button;
         }
     }
 }
