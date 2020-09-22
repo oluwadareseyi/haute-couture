@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Marsek';
+    src: url('./assets/fonts/Marsek-Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
- 
+    margin: 0;
+    font-family: "Marsek", sans-serif;
+    background: #171616;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./assets/fonts/HelveticaNowText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
