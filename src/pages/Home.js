@@ -33,6 +33,17 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="featured">
+        <div className="title">Featured</div>
+        <div className="sub">Ladies Summer Collection</div>
+        <div className="featured-grid">
+          <div className="item left">Lucid Dreams</div>
+          <div className="item center-top">Ocean Eyes</div>
+          <div className="item center-bottom">Ocean Eyes</div>
+          <div className="item right">Lucid Dreams</div>
+        </div>
+      </section>
     </div>
   );
 };
