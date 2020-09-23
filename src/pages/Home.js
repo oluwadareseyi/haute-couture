@@ -2,6 +2,7 @@ import gsap from "gsap/gsap-core";
 import React, { useEffect } from "react";
 import { landingAnim, womenAnimation } from "../animation";
 import { ReactComponent as Cross } from "../assets/images/cross-icon.svg";
+import { ReactComponent as Arrow } from "../assets/images/arrow.svg";
 
 const mensClothes = [
   {
@@ -58,6 +59,13 @@ const Home = () => {
           <div className="logo">Haute Couture</div>
           <div className="hamburger"></div>
         </nav>
+
+        <div className="scroll-indicator">
+          <div className="text">Scroll for more details</div>
+          <div className="arrow">
+            <Arrow />
+          </div>
+        </div>
 
         <div className="main-hero">
           <div className="left">

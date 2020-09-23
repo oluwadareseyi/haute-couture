@@ -80,6 +80,16 @@ export const landingAnim = () => {
         ease: "Power3.easeOut",
       },
       "-=2.5"
+    )
+    .from(
+      ".arrow",
+      {
+        duration: 1,
+        right: 300,
+        opacity: 0,
+        ease: "Power3.easeOut",
+      },
+      "-=2.5"
     );
 };
 
