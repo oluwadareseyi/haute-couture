@@ -92,8 +92,8 @@ export const womenAnimation = () => {
         start: "top center",
         toggleActions: "play none none none",
       },
-      duration: 4,
-      y: -250,
+      duration: 5,
+      y: -200,
       ease: "Power3.easeOut",
     });
 
