@@ -90,7 +90,6 @@ export const womenAnimation = () => {
       scrollTrigger: {
         trigger: ".center-top",
         start: "top center",
-        markers: true,
         toggleActions: "play none none none",
       },
       duration: 4,
