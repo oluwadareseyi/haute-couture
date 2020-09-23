@@ -1,3 +1,4 @@
+import gsap from "gsap/gsap-core";
 import React, { useEffect } from "react";
 import { landingAnim, womenAnimation } from "../animation";
 import { ReactComponent as Cross } from "../assets/images/cross-icon.svg";
@@ -42,6 +43,7 @@ const mensClothes = [
 
 const Home = () => {
   useEffect(() => {
+    gsap.set("body", { css: { visibility: "visible" } });
     landingAnim();
     const timeout = setTimeout(() => {
       womenAnimation();
