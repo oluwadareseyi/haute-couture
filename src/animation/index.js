@@ -103,7 +103,7 @@ export const womenAnimation = () => {
       start: "top center",
       toggleActions: "play none none none",
     },
-    duration: 4,
+    duration: 2,
     y: 100,
     ease: "Power3.easeOut",
   });
