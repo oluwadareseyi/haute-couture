@@ -87,10 +87,18 @@ const Home = () => {
         <div className="title">Featured</div>
         <div className="sub">Ladies Summer Collection</div>
         <div className="featured-grid">
-          <div className="item left">Lucid Dreams</div>
-          <div className="item center-top">Ocean Eyes</div>
-          <div className="item center-bottom">Ocean Eyes</div>
-          <div className="item right">Lucid Dreams</div>
+          <div className="item left">
+            <span>Lucid Dreams</span>
+          </div>
+          <div className="item center-top">
+            <span>Ocean Eyes</span>
+          </div>
+          <div className="item center-bottom">
+            <span>Ocean Eyes</span>
+          </div>
+          <div className="item right">
+            <span>Lucid Dreams</span>
+          </div>
         </div>
         <div className="button">View all</div>
       </section>

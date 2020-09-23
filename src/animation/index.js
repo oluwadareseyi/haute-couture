@@ -93,9 +93,32 @@ export const womenAnimation = () => {
         toggleActions: "play none none none",
       },
       duration: 4,
-      y: -300,
+      y: -250,
       ease: "Power3.easeOut",
     });
+
+  gsap.from(".item span", {
+    scrollTrigger: {
+      trigger: ".center-top",
+      start: "top center",
+      toggleActions: "play none none none",
+    },
+    duration: 4,
+    y: 100,
+    ease: "Power3.easeOut",
+  });
+
+  gsap.to(".hero-image", {
+    scrollTrigger: {
+      trigger: ".hero-image",
+      start: "center 40%",
+      toggleActions: "play none none none",
+      scrub: true,
+    },
+    duration: 3,
+    y: -150,
+    ease: "Power3.easeOut",
+  });
 
   gsap.from(".image-con", {
     scrollTrigger: {
