@@ -249,7 +249,6 @@
 
         .image-con {
             display: flex;
-            gap: 20px;
             overflow: auto;
             margin-bottom: 85px;
 
@@ -271,8 +270,8 @@
                 align-items: flex-end;
                 padding-bottom: 20px;
 
-                &:last-of-type {
-                    margin-right: 30px;
+                &:not(:last-of-type) {
+                    margin-right: 20px;
                 }
             }
         }
