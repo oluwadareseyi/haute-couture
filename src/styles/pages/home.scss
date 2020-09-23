@@ -1,5 +1,9 @@
 .landing {
     color: $white;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+    display: none;
 
     @mixin paddingSet {
         padding: 40px 70px;
@@ -126,11 +130,14 @@
                             margin-left: 10px;
                             left: 0;
                         }
+
+                        @include media("<=600px") {
+                            margin-left: 0;
+                        }
                     }
 
                     .label-2 {
                         z-index: -1;
-                        // top: 40%;
                         margin-top: 70px;
                     }
                 }
@@ -280,6 +287,7 @@
         padding-top: 90px;
         font-size: 45px;
         height: 520px;
+        overflow: hidden;
 
         @include media("<=850px") {
             font-size: 4vmin;

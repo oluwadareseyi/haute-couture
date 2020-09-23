@@ -6,6 +6,9 @@ function App() {
   return (
     <>
       <div className="pages">
+        <div className="animate-text">
+          <span>Haute Couture</span>
+        </div>
         <Home />
       </div>
     </>

@@ -6,4 +6,25 @@
 .pages {
     max-width: 1500px;
     margin: 0 auto;
+
+    .animate-text {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        font-size: 8vmin;
+        opacity: 1;
+        height: 100vh;
+        color: $white;
+        z-index: 1;
+
+        span {
+            background: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px $white;
+            opacity: 1;
+        }
+    }
 }

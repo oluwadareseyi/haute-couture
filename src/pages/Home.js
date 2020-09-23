@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { landingAnim, womenAnimation } from "../animation";
 import { ReactComponent as Cross } from "../assets/images/cross-icon.svg";
 
 const mensClothes = [
@@ -40,6 +41,14 @@ const mensClothes = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    landingAnim();
+    const timeout = setTimeout(() => {
+      womenAnimation();
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <div className="landing">
       <section className="hero">
@@ -65,7 +74,7 @@ const Home = () => {
                 alt="fashion-model"
               />
 
-              <div className="label">Haute Couture</div>
+              <div className="label label-1">Haute Couture</div>
               <div className="label label-2"></div>
             </div>
           </div>
